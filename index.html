@@ -7,12 +7,20 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".installation").css("margin-top", "115px");
-			$("#hero-bg-gradient").attr("d",
-				"M1.13686838e-13,0 L1440.45933,0 L1440.45933,720.055544 C1378.10611,449.367997 1274.07294,314.024223 1128.35981,314.024223 C1016.39171,314.024223 1142.24792,770.895174 870.277512,641.049449 C658.710048,540.041658 343.10941,484.037338 250.079745,694.053538 C220.866325,760.003376 137.50641,768.670712 1.13686838e-13,720.055544 L1.13686838e-13,0 Z"
-			);
-		});
+
+
+		function isMobile() {
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (!isMobile()) {
+	$(document).ready(function() {
+		$(".installation").css("margin-top", "115px");
+		$("#hero-bg-gradient").attr("d",
+			"M1.13686838e-13,0 L1440.45933,0 L1440.45933,720.055544 C1378.10611,449.367997 1274.07294,314.024223 1128.35981,314.024223 C1016.39171,314.024223 1142.24792,770.895174 870.277512,641.049449 C658.710048,540.041658 343.10941,484.037338 250.079745,694.053538 C220.866325,760.003376 137.50641,768.670712 1.13686838e-13,720.055544 L1.13686838e-13,0 Z"
+		);
+	});
+}
 	</script>
 	<!-- MAUTIC FORM JS START -->
 	<script type="text/javascript">
@@ -37,7 +45,7 @@
 </head>
 <body>
 	<div class="liquid">
-		<svg class="hero-bg" width="1440px" height="751px" viewBox="0 0 1440 751" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<svg class="hero-bg" viewBox="0 0 1440 751" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<defs>
 						<linearGradient x1="91.6549675%" y1="83.9764826%" x2="0%" y2="0%" id="linearGradient-1">
 								<stop stop-color="#E0E6FD" offset="0%"></stop>
