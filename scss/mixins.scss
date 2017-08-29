@@ -1,0 +1,26 @@
+@mixin h1-mobile {
+  font-family: $main-font;
+  font-size: 22px;
+  line-height: 35px;
+  color: $blue;
+  text-align: center;
+}
+@mixin h2-mobile {
+  font-family: $main-font;
+  font-size: 24px;
+  color: $blue;
+  text-align: center;
+  margin-bottom: 15px;
+}
+@mixin h3-mobile {
+  font-family: $main-font;
+  font-size: 20px !important;
+  text-align: center;
+}
+@mixin sub-line-mobile {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 24px;
+  color: $medium-blue;
+  text-align: center;
+}

@@ -1,0 +1,172 @@
+@media (max-width: 1000px) {
+  h2 {
+    @include h2-mobile;
+  }
+  h3 {
+    @include h3-mobile;
+  }
+  .container {
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .value-prop {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    h1 {
+      @include h1-mobile;
+    }
+
+    a.button,
+    a.sub-link {
+      margin: 20px auto !important;
+      text-align: center;
+      display: table;
+    }
+  }
+  .installation {
+    margin-top: 20px;
+    padding:30px 10px;
+    p {@include sub-line-mobile;}
+  }
+  .terminal-window {
+    .bar {
+      display: none;
+    }
+    .code {
+      p {
+        text-align: left;
+        line-height: 15px !important;
+      }
+    }
+  }
+  .features  {
+    p {@include sub-line-mobile;}
+    ul {
+      flex-direction: column;
+      li {
+        padding: 0 !important;
+        max-width: 100%;
+        a.sub-link {
+          margin-top: 0;
+        }
+      }
+    }
+
+  }
+  .faq {
+    h2 {
+      margin-bottom: 30px;
+    }
+    ul.questions {
+      li {
+        padding: 0;
+        h3 {
+          text-align: left;
+        }
+        p {
+          @include sub-line-mobile;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .nolte_card {
+    padding: 40px 10px;
+    height: auto;
+    background: #F0F7FA;
+    margin-top: 0px;
+    .inner {
+      margin: 0 auto 20px;
+      h2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        img {
+          margin-top: 15px;
+        }
+      }
+      .cta {
+        text-align: center;
+        display: block;
+        a {
+          display: inline-block;
+          margin-top: 25px;
+        }
+      }
+    }
+    p {
+      @include sub-line-mobile;
+    }
+  }
+  .subscribe {
+    .inner {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    padding: 30px 0;
+    p {
+      @include sub-line-mobile;
+      margin-top: 0 !important;
+    }
+    .sub_text {
+      align-self: auto;
+      width: auto;
+    }
+    .sub_form {
+      position: relative;
+      right: auto;
+      align-self: auto;
+      input[type=email] {
+      display: block;
+      margin: 20px auto 0;
+      max-width: calc( 100% - 100px )
+      }
+      .mauticform-row {
+      width: 100%;
+      button {
+        display: block;
+        margin: 20px auto 0 auto;
+      }
+      }
+    }
+    }
+    position: absolute;
+    left: 0;
+    background: #F0F7FA;
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+        padding-top: 30px;
+        flex-direction: column;
+          div {
+            font-size: 14px;
+            margin-bottom: 20px;
+            text-align: center;
+          }
+    }
+}
+
+@media ( min-width:768px ) and (max-width:1000px)  {
+  .features {
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      li {
+        max-width: 50%;
+      }
+    }
+  }
+  .faq {
+    ul {
+      justify-content: center;
+      li {
+        max-width: calc( ( 100% / 2 ) - 100px );
+      }
+    }
+  }
+}
