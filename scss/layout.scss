@@ -15,6 +15,10 @@ transition: 1s;
   padding-top: 130px;
   .value-prop {
   max-width: 500px;
+  h1 img.logo {
+    display: block;
+    margin-bottom: 40px;
+  }
   }
   a.button {
     display: inline-block;
