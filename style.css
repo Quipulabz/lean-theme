@@ -342,6 +342,9 @@ svg.hero-bg {
       line-height: 35px;
       color: #373E4A;
       text-align: center; }
+      .value-prop h1 img.logo {
+        display: block;
+        margin: 0 auto 40px; }
     .value-prop a.button,
     .value-prop a.sub-link {
       margin: 20px auto !important;
