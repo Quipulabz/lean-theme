@@ -57,8 +57,9 @@ a.button, button {
   text-decoration: none;
   transition: background .25s; }
 
-a.button:hover {
-  background: #FF5F5F; }
+.button:hover {
+  background: #373E4A;
+  cursor: pointer; }
 
 a.sub-link {
   font-family: "Gilroy", sans-serif;

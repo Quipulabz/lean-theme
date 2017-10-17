@@ -1,6 +1,6 @@
 /* COLORS */
 $button: #FF3030;
-$button-hover: #FF5F5F;
+$button-hover: #373E4A;
 $blue: #373E4A;
 $medium-blue: #373E4A;
 $light-blue: #E1E4E9;
@@ -65,8 +65,9 @@ a.button , button {
 	text-decoration: none;
 	transition: background .25s;
 }
-a.button:hover {
+.button:hover {
 	background: $button-hover;
+  cursor: pointer;
 }
 a.sub-link {
 	font-family: $main-font;
